@@ -37,7 +37,7 @@
 
        @media @mobile {
          width: 100%;
-         padding-left: 5%;
+         padding-left: 10%;
          
        }
 
@@ -46,48 +46,14 @@
       }
     }
   }
-
-  .content-section-inverse-content{
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border-bottom: @border-line;
-    padding-bottom: 2rem;
-
-    @media @mobile {
-      .center (column-reverse wrap, center, center);
-    }
-
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
-
-      @media @mobile {
-         width: 90%;
-       }
-    }
-
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
-
-      @media @mobile {
-         width: 100%;
-         padding-left: 5%;
-         
-       }
-
-      img {
-        border-radius: 10px;
-      }
-    }
-  }
-
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+       @media @mobile {
+      .center (column-reverse wrap, center, center);
+    }
    
 
     .text-content {
@@ -98,6 +64,11 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+         width: 100%;
+         padding-left: 10%;
+       }
     }
   }
 
@@ -107,6 +78,11 @@
 
     img {
       border-radius: 10px;
+
+      @media @mobile {
+         width: 100%;
+         
+      }
     }
   }
 
@@ -116,13 +92,26 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+    .center (column wrap, center, center);
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 70%;
+      }
     }
 
     .btn {
 .sign-btn ();
+
+@media @mobile {
+background-color: #16A2B8;
+}
+
   }
   }
 }// home
