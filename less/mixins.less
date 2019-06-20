@@ -1,1 +1,8 @@
 // Mixins in here
+
+.center (@flow: row wrap, @justify: space-between, @align: center) {
+    display:flex;
+    flex-flow: @flow;
+    justify-content: @justify;
+    align-items: @align;
+}
