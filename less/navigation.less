@@ -2,25 +2,36 @@
 
 .nav-bar {
     .center ();
+    max-width: 925px;
+    margin: auto;
     border-bottom: 2px dashed silver;
     margin-top: 2rem;
     padding-bottom: 2rem;
     font-weight: bold;
-    
-   
-         nav a{
+
+    h1 {
+        padding-left: 7rem;
+        
+        @media @mobile {
+            margin:auto;
+            padding-right: 4rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+        nav {
+            margin-left: 3rem;
+
+            @media @mobile {
+               }
+        a{
          text-decoration: none;
          color: black;
          font-size: 1.6rem;
-         padding-left: 2rem;
-         padding-right: 2rem;
-         }
+         padding-right: 3rem;
 
-    @media @mobile {
-        .center (column wrap,space-between ,center);
-
-        h1 {
-            margin-bottom: 1rem;
+         @media @mobile {
+             margin-left: 3rem;
+            }
         }
     }
 }

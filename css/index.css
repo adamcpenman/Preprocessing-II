@@ -173,27 +173,35 @@ img {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  max-width: 925px;
+  margin: auto;
   border-bottom: 2px dashed silver;
   margin-top: 2rem;
   padding-bottom: 2rem;
   font-weight: bold;
 }
+.nav-bar h1 {
+  padding-left: 7rem;
+}
+@media (max-width:500px) {
+  .nav-bar h1 {
+    margin: auto;
+    padding-right: 4rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.nav-bar nav {
+  margin-left: 3rem;
+}
 .nav-bar nav a {
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-right: 3rem;
 }
-@media (max-width:510px) {
-  .nav-bar {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .nav-bar h1 {
-    margin-bottom: 1rem;
+@media (max-width:500px) {
+  .nav-bar nav a {
+    margin-left: 3rem;
   }
 }
 .footer {
@@ -214,7 +222,7 @@ img {
   margin-top: 2rem;
   border-bottom: 2px dashed #C0C0C0;
 }
-@media (max-width:510px) {
+@media (max-width:500px) {
   .home .main-header {
     width: 90%;
   }
@@ -225,7 +233,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media (max-width:510px) {
+@media (max-width:500px) {
   .home .content-section {
     display: flex;
     flex-flow: column wrap;
@@ -237,7 +245,7 @@ img {
   width: 48%;
   padding-right: 1%;
 }
-@media (max-width:510px) {
+@media (max-width:500px) {
   .home .content-section .text-content {
     width: 90%;
   }
@@ -246,7 +254,7 @@ img {
   width: 48%;
   padding-left: 1%;
 }
-@media (max-width:510px) {
+@media (max-width:500px) {
   .home .content-section .img-content {
     width: 100%;
     padding-left: 10%;
@@ -259,7 +267,7 @@ img {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-@media (max-width:510px) {
+@media (max-width:500px) {
   .home .inverse-content {
     display: flex;
     flex-flow: column-reverse wrap;
@@ -275,7 +283,7 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
-@media (max-width:510px) {
+@media (max-width:500px) {
   .home .inverse-content .img-content {
     width: 100%;
     padding-left: 10%;
@@ -288,7 +296,7 @@ img {
 .home .content-destination img {
   border-radius: 10px;
 }
-@media (max-width:510px) {
+@media (max-width:500px) {
   .home .content-destination img {
     width: 100%;
   }
@@ -299,7 +307,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width:510px) {
+@media (max-width:500px) {
   .home .content-pick {
     display: flex;
     flex-flow: column wrap;
@@ -311,7 +319,7 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-@media (max-width:510px) {
+@media (max-width:500px) {
   .home .content-pick .destination {
     width: 70%;
   }
@@ -326,8 +334,63 @@ img {
   padding-top: 1.3rem;
   border-radius: 1.5rem;
 }
-@media (max-width:510px) {
+.home .content-pick .btn:hover {
+  background-color: #00b3b3;
+}
+@media (max-width:500px) {
   .home .content-pick .btn {
     background-color: #16A2B8;
+  }
+  .home .content-pick .btn:hover {
+    background-color: #117a8a;
+  }
+}
+.home .package-form {
+  border-top: 2px dashed #C0C0C0;
+}
+.home .contact-form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.home .contact-form h2 {
+  margin-top: 2rem;
+}
+.home .contact-form .form-control {
+  width: 35rem;
+  height: 5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 0.7rem;
+  background-color: #F5F5F5;
+}
+.home .contact-form .textarea {
+  width: 35rem;
+  height: 10rem;
+  background-color: #F5F5F5;
+}
+.home .contact-form .submit {
+  width: 90%;
+  height: 4.5rem;
+  color: white;
+  font-size: 1.8rem;
+  background-color: #008080;
+  text-align: center;
+  padding-top: 1.3rem;
+  border-radius: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+.home .contact-form .submit:hover {
+  background-color: #00b3b3;
+}
+@media (max-width:500px) {
+  .home .contact-form .submit {
+    background-color: #16A2B8;
+  }
+  .home .contact-form .submit:hover {
+    background-color: #117a8a;
   }
 }

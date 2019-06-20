@@ -81,8 +81,7 @@
 
       @media @mobile {
          width: 100%;
-         
-      }
+        }
     }
   }
 
@@ -108,10 +107,55 @@
     .btn {
 .sign-btn ();
 
-@media @mobile {
-background-color: #16A2B8;
+  @media @mobile {
+  background-color: #16A2B8;
+   &:hover {
+     background-color: darken(#16A2B8, 10%)
+   }
+      }
+    }
+  }
+
+.package-form {
+  border-top: @border-line;
+  
 }
 
+.contact-form {
+  .center(column wrap, center, center);
+
+  h2 {
+    margin-top: 2rem;
   }
+  
+  .form-control {
+    width: 35rem;
+    height: 5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    border-radius: .7rem;
+    background-color: #F5F5F5;
   }
+
+  .textarea {
+    width: 35rem;
+    height: 10rem;
+    background-color: #F5F5F5;
+ }
+
+ .submit {
+   .sign-btn ();
+   padding-bottom: 1.5rem;
+   font-weight: bold;
+   margin-left: 1rem;
+
+   @media @mobile {
+     background-color: #16A2B8;
+      &:hover {
+     background-color: darken(#16A2B8, 10%)
+   }
+    }
+  }
+}
+
 }// home
